@@ -34,11 +34,12 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:    #5f2d8c,
+  secondary:  #1b6a7b,
+  danger:     #489d6a,
+  light:      #a7add7,
+  dark:       #5a535e,
+  red:        #900000
 );
 
 
@@ -86,3 +87,20 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+
+.logo_header{
+	height: 40px;
+	display: inline-block;
+	margin-top: 3px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.tabs-md-primary .tab-button[aria-selected=true]{
+	background-color: map-get($colors, 'light');
+	.tab-button-icon{
+		color: map-get($colors, 'primary') !important;
+	}	
+} 	
